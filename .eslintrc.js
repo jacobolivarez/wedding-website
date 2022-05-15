@@ -53,6 +53,7 @@ module.exports = {
 
   // add your custom rules here
   rules: {
+    'no-console': 'off',
     'no-param-reassign': 'off',
     'no-void': 'off',
     'no-nested-ternary': 'off',
@@ -71,6 +72,15 @@ module.exports = {
 
 
     // allow debugger during development only
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+
+    // max-len rule copied from airbnb-base
+    'max-len': ['error', 100, 2, {
+      ignoreUrls: true,
+      ignoreComments: true, // Changed to true because a line becoming invalid when you comment it is dumb.
+      ignoreRegExpLiterals: true,
+      ignoreStrings: true,
+      ignoreTemplateLiterals: true,
+    }],
   }
 }
