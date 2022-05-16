@@ -24,7 +24,7 @@
             >
               <q-select
                 v-model="guest"
-                :options="guests"
+                :options="options"
                 option-label="name"
                 option-value="id"
                 behavior="menu"
@@ -124,6 +124,7 @@ export default {
       rules: {
         required(val) { return !!val || 'This field is required.'; },
       },
+      options: [],
     };
   },
   computed: {
@@ -144,16 +145,11 @@ export default {
       this.guests = response.data;
     },
     guestsFilter(val, update) {
-      if (val === '') {
-        update(() => {
-          this.options = this.guests;
-        });
-      } else {
-        update(() => {
-          const needle = val.toLowerCase();
-          this.options = this.guests.filter((v) => v.toLowerCase().indexOf(needle) > -1);
-        });
-      }
+      update(() => {
+        this.options = this.guests.filter(
+          (option) => option.name.toLowerCase().indexOf(val.toLowerCase()) > -1,
+        );
+      });
     },
     async submit() {
       this.$q.loading.show();

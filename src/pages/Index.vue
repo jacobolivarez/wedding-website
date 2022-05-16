@@ -38,6 +38,7 @@
             flat
             icon="menu"
             color="secondary"
+            size="lg"
           >
             <q-menu>
               <q-list>
