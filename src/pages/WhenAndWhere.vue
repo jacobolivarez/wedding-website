@@ -45,7 +45,8 @@
       <div class="col-xs-12 col-lg-6">
         <div>Ceremony</div>
         <div class="q-py-sm"><q-icon name="church" size="7rem" /></div>
-        <div class="q-pb-lg">5:00 PM</div>
+        <div>5:00 PM</div>
+        <div class="fontsize-18">Please arrive early.</div>
         <q-separator inset class="lt-lg" />
       </div>
       <q-separator vertical class="gt-md" />
@@ -53,7 +54,7 @@
         <div>Coctail Hour</div>
         <div class="q-py-sm"><q-icon name="local_bar" size="7rem" /></div>
         <div>6:00 PM</div>
-        <div class="fontsize-18">(Reception to follow.)</div>
+        <div class="fontsize-18">Reception to follow.</div>
       </div>
     </div>
   </Page>
