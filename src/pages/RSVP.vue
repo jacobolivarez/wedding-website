@@ -1,12 +1,5 @@
 <template>
-  <div style="border-bottom: 1px solid black;" class="outfit">
-    <div class="row q-pa-lg">
-      <div
-        class='col fontsize-48 q-py-md'
-      >
-        <span>RSVP</span>
-      </div>
-    </div>
+  <Page title="RSVP">
     <div class="fit row wrap justify-start items-start content-start">
       <div class="col-md-4 col-xs-12 offset-md-4 q-pa-sm">
         <q-card>
@@ -107,7 +100,7 @@
         </q-card>
       </div>
     </div>
-  </div>
+  </Page>
 </template>
 
 <script>

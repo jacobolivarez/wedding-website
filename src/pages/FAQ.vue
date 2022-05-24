@@ -1,12 +1,5 @@
 <template>
-  <div style="border-bottom: 1px solid black;" class="outfit">
-    <div class="row q-pa-lg">
-      <div
-        class='col fontsize-48'
-      >
-        <span>Frequently Asked Questions</span>
-      </div>
-    </div>
+  <Page title="Frequently Asked Questions">
     <div class="row">
       <div class="col">
         <q-card square bordered flat>
@@ -32,7 +25,7 @@
         </q-card>
       </div>
     </div>
-  </div>
+  </Page>
 </template>
 
 <script>

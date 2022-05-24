@@ -1,12 +1,5 @@
 <template>
-  <div style="border-bottom: 1px solid black;" class="outfit">
-    <div class="row q-pa-lg">
-      <div
-        class='col fontsize-48'
-      >
-        <span>When & Where</span>
-      </div>
-    </div>
+  <Page title="When & Where">
     <div class="row q-pb-lg">
       <div class="col-xs-12 col-sm-6">
         <q-img
@@ -63,7 +56,7 @@
         <div class="fontsize-18">(Reception to follow.)</div>
       </div>
     </div>
-  </div>
+  </Page>
 </template>
 
 <script>

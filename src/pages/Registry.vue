@@ -1,12 +1,5 @@
 <template>
-  <div style="border-bottom: 1px solid black;" class="outfit">
-    <div class="row q-pa-lg">
-      <div
-        class='col fontsize-48 q-py-lg'
-      >
-        <span>Registry</span>
-      </div>
-    </div>
+  <Page title="Registry">
     <div class="fit row wrap">
       <div class="col-lg-8 col-md-6 col-xs-12 q-pa-sm offset-md-2">
         <q-card>
@@ -52,7 +45,6 @@
               color="secondary"
               v-close-popup
             />
-            <!-- <q-btn icon="close" flat round dense v-close-popup /> -->
           </q-card-section>
           <q-card-section class="q-pb-none">
             <p>
@@ -81,7 +73,7 @@
         </q-card>
       </q-dialog>
     </div>
-  </div>
+  </Page>
 </template>
 
 <script>

@@ -1,12 +1,5 @@
 <template>
-  <div style="border-bottom: 1px solid black;" class="outfit">
-    <div class="row q-pa-lg">
-      <div
-        class='col fontsize-48 q-py-md'
-      >
-        <span>Contact Us</span>
-      </div>
-    </div>
+  <Page title="Contact Us">
     <div class="fit row wrap justify-start items-start content-start">
       <div class="col-md-4 col-xs-12 offset-md-4 q-pa-sm">
         <q-card>
@@ -66,12 +59,12 @@
         </q-card>
       </div>
     </div>
-  </div>
+  </Page>
 </template>
 
 <script>
 export default {
-  name: 'RSVP',
+  name: 'ContactUs',
   data() {
     return {
       name: null,

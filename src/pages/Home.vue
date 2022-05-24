@@ -1,24 +1,19 @@
 <template>
-  <div style="border-bottom: 1px solid black;" class="outfit">
-    <div class="row q-pa-lg">
-      <div
-        class='col fontsize-48 q-py-lg'
-      >
-        <span class="q-pt-md">We're Getting Married!</span>
-      </div>
-    </div>
-    <div class="q-pa-lg fit row wrap justify-start items-start content-start">
-      <div class="col-lg-4 col-xs-12 q-pa-xs">
+  <Page
+    title="We're Getting Married!"
+  >
+    <div :class="containerClass">
+      <div :class="pictureContainer">
         <q-img
           src="../assets/homePage.png"
         />
       </div>
-      <div class="col-lg-4 col-xs-12 q-pa-xs">
+      <div :class="pictureContainer">
         <q-img
           src="../assets/homePage2.png"
         />
       </div>
-      <div class="col-lg-4 col-xs-12 q-pa-xs">
+      <div :class="pictureContainer">
         <q-img
           src="../assets/homePage3.png"
         />
@@ -56,7 +51,7 @@
         />
       </div>
     </div>
-  </div>
+  </Page>
 </template>
 
 <script>
@@ -67,8 +62,20 @@ export default {
   components: {
     Countdown,
   },
+  computed: {
+    containerClass() {
+      return [
+        'row',
+        'q-py-md',
+      ];
+    },
+    pictureContainer() {
+      return [
+        'col-lg-4',
+        'col-xs-12',
+        'q-pa-xs',
+      ];
+    },
+  },
 };
 </script>
-
-<style>
-</style>
