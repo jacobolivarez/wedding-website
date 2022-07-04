@@ -147,8 +147,8 @@ module.exports = configure((ctx) => ({
     },
 
     manifest: {
-      name: 'J&M',
-      short_name: 'J&M',
+      name: 'M&J',
+      short_name: 'M&J',
       description: 'Wedding website for Jacob and Marissa.',
       display: 'standalone',
       orientation: 'portrait',

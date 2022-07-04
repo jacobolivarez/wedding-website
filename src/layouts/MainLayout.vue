@@ -4,7 +4,7 @@
       <q-toolbar>
         <q-toolbar-title class="text-center greatVibes q-pa-md text-secondary">
           <span class="fontsize-48">
-            Jacob & Marissa
+            Marissa & Jacob
           </span>
         </q-toolbar-title>
       </q-toolbar>
